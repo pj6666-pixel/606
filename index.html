@@ -5,61 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的個人頁面</title>
     <style>
+        /* General styling */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f1f1f1;
+            text-align: center;
         }
-        .container {
-            margin-top: 50px;
-        }
-        .photo {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border: 5px solid #ddd;
-            margin: 20px;
-        }
-        h1 {
+        h1, h2 {
             color: #333;
         }
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
         }
-        .section {
-            margin-bottom: 20px;
+
+        /* Header and logo styling */
+        .header {
+            position: relative;
+            height: 100vh;
+            background-image: url('my photo.png'); /* 使用您上傳的圖片 */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+        }
+        .header a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        /* Main content styling */
+        .main-content {
+            background-color: #fff;
+            padding: 40px 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .main-content .section {
+            margin-bottom: 40px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>歡迎來到我的頁面！</h1>
-        <!-- 顯示上傳的照片 -->
-        <img src="my photo.png" alt="我的照片" class="photo">
-        <p>這是我的個人頁面，展示了我的照片以及其他資訊。</p>
+    <!-- Header Section with Background Image -->
+    <div class="header">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Urban Adventures</h1>
+            <p>Graffiti Art</p>
+            <a href="#projects">See My Projects</a>
+        </div>
     </div>
 
-    <div class="content">
-        <div class="section">
-            <h2>關於我</h2>
-            <p>這裡是我簡單的介紹。</p>
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>Here you will find some of my graffiti art projects and urban exploration adventures.</p>
         </div>
-        <div class="section">
-            <h2>我的項目</h2>
-            <p>這裡將展示我的一些項目。</p>
+        <div class="section" id="about">
+            <h2>About</h2>
+            <p>Learn more about my journey and passion for urban art.</p>
         </div>
-        <div class="section">
-            <h2>聯繫我</h2>
-            <p>這裡是我的聯繫方式。</p>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaborations or inquiries.</p>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Urban Adventures. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

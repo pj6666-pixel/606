@@ -16,8 +16,8 @@
             margin-top: 50px;
         }
         .photo {
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             border: 5px solid #ddd;
             margin: 20px;
@@ -25,14 +25,40 @@
         h1 {
             color: #333;
         }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>歡迎來到我的頁面！</h1>
-        <img src="my-photo.jpg" alt="我的照片" class="photo">
-        <p>這是我的個人頁面，我會放上我的照片和介紹。</p>
+        <!-- 顯示上傳的照片 -->
+        <img src="my photo.png" alt="我的照片" class="photo">
+        <p>這是我的個人頁面，展示了我的照片以及其他資訊。</p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h2>關於我</h2>
+            <p>這裡是我簡單的介紹。</p>
+        </div>
+        <div class="section">
+            <h2>我的項目</h2>
+            <p>這裡將展示我的一些項目。</p>
+        </div>
+        <div class="section">
+            <h2>聯繫我</h2>
+            <p>這裡是我的聯繫方式。</p>
+        </div>
     </div>
 
 </body>
